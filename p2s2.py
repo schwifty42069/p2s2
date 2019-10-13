@@ -6,8 +6,6 @@ from bs4 import BeautifulSoup as Soup
 class StatScraper(object):
     def __init__(self):
         self.website = "https://www.nfl.com/scores"
-        self.recap_tag = "a"
-        self.recap_class = "nfl-c-game-strip__link"
         self.sp_header = "\n| Team | Quarter | Type | Description |\n|:--:|:--:|:--:|:--|"
         self.sbq_header = "\n| Team | Q1 | Q2 | Q3 | Q4 | Total |\n|:--:|:--:|:--:|:--:|:--:|:--:|"
         self.box_header = "\n| Team | Penalties | Rushing Yards | Net Passing Yards | Scrim. Yards| Time of Possession " \
