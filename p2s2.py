@@ -39,7 +39,7 @@ class StatScraper(object):
             if p['scoringPlay'] and p['playType'] != "XP_KICK":
                 if "TOUCHDOWN" in p['shortDescription']:
                     score_type = "TD"
-                elif "FIELD GOAL" in p['shortDescription']:
+                elif "field goal" in p['shortDescription']:
                     score_type = "FG"
                 elif "SAFETY" in p['shortDescription']:
                     score_type = "SAFETY"
